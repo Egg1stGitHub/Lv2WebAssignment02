@@ -1,0 +1,174 @@
+/* Group 4 Assignment2 CSS file.
+   Group Member: Mao Ye; Qingfang Tan; Xiaopeng Li
+   Date: D2022-
+   Section: CST 8285 section 301 */
+
+/* Header Part */
+body{
+    background-color: rgb(161, 201, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(30, 29, 29);
+}
+
+div{
+    display: block;
+}
+
+.header {
+    background-color: white;
+    height: 118px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.logo {
+    padding:15px;
+    height: 5em;
+    margin-left: auto;
+    float: left;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav_top1 {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.nav_top {
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Main Part */
+main {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+#mainBanner {
+    border: 1px solid black;
+    height: 25em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#indexNav {
+    border: 1px solid black;
+    height: 15em;
+}
+
+#indexVaccnForChild {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 33%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+.textfield {
+    width: 100%;
+    text-align: left;
+}
+
+.textfield input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+
+/* Footer Part */
+footer {
+    margin-top: 1em;
+    background-color: white;
+    height: 200px;
+}
+
+.foot_nav{
+    padding: 3em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+address {
+    color: grey;
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 2em;
+}
+
+/* Link function */
+a:link, a:visited {    
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+
+}
+
+a:hover {
+    text-decoration: none;
+    color:rgb(70, 153, 198);
+}
+
+/* Login page part */
+form {
+    text-align: center;
+    margin-top: 8em;
+    margin-bottom: 8em;
+    /* margin-left: 25em;
+    margin-right: 25em; */
+}
+
+fielset {
+    border-radius: 15px;
+}
+
+/* Routine Vaccine page part */
+.routineform {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 4em;
+}
+
+table {
+    border: 1px solid black;
+    height: 50em;
+    margin-top: 2em;
+}
+
+/* Sign up Form page part */
+.signupform >table, th, td{
+    border: 1px solid black;
+    width: 100%;
+    height: 15px;
+    margin-top: 1em;
+}

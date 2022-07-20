@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Children Immunization Record Webpage</title>
+        <meta name="author" content="Mao Ye; Qingfang Tan; Tanzim Ahmed Sagar; Xiaopeng Li"/>
+        <meta name="pagename" content="index.html"/>
+        <link rel="stylesheet" href="assign2.css"/> 
+    </head>
+
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <img src="/Assignment2/Image/logo.png" class="logo">
+                <div class="flex-container">
+                <div class="nav_top">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="nav_top">
+                    <a href="routinevaccine.html">Routin<br>Vaccinations</a>
+                </div>
+                <div class="nav_top">
+                    <a href="immuninization.html">Immunization<br>Schedule</a>
+                </div>
+                <div class="nav_top">
+                    <a href="firstImmu.html">First Immunization<br>Record</a>
+                </div>
+                <div class="nav_top">
+                    <a href="login.html">Rigister/<br>LogIn</a>
+                </div>
+                <!--search function-->
+                <div class="nav_top">
+                    <input type="search">
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="formcontainer">
+            <h1>New Borned Baby Immunization Record</h1><hr>
+            <form action="firstImmu.html" method="get" onsubmit="return validate()">
+                <p>If you are the first time to enter the immunization record, please enter below information. 
+                    If you are not the first time to enter the immunization record, you can skip the first part and 
+                    roll down to the buttom and press CHILDID button.
+                </p>
+                <!--about mother information-->
+                <div class="textfield">
+                    <label for="momFirstN">Mother First Name: </label>
+                    <input type="text" name="momFirstN" id="momFirstN" placeholder="Mother First Name" size="50" required>
+                </div>
+                <div class="textfield">
+                    <label for="momLastN">Mother Last Name: <label>
+                    <input type="text" name="momLastN" id="momLastN" placeholder="Mother First Name" size="50" required>
+                </div>
+                <div class="textfield">
+                    <label for="momHealthCardID">Mother Health Card Number: </label>
+                    <input type="text" name="momHealthCardID" id="momHealthCardID" placeholder="Health Card Number" size="50" required>
+                </div>
+                <div class="textfield">
+                    <label for="livingAdd">Living Address: </label>
+                    <input type="text" name="livingAdd" id="livingAdd" placeholder="living Address" size="50">
+                </div>
+                <div class="textfield">
+                    <label for="mailingAdd">Mailing Address: </label>
+                    <input type="text" name="mailingAdd" id = "mailingAdd" placeholder="mailing Address" size="50">
+                </div>
+                <div class="textfield">
+                    <label for="city">City: </label>
+                    <input type="text" name="city" id = "city" placeholder="city" size="50">
+                </div>
+                <div class="textfield">
+                    <label for="province">Province :</label>
+                    <select name="province" id = "province">
+                        <option value="">Select Province</option>
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="YT">Yukon</option>
+                    </select>
+                </div>
+                <div class="textfield">
+                    <label for="country">Country: </label>
+                    <select id="country" name="country">
+                        <option value="">Select Country</option>
+                        <option value="CA">Canada</option>
+                        <option value="US">United States</option>
+                        <option value="OTH">Other</option>
+                    </select>  
+                </div>
+                <div class="textfield">
+                    <label for="postCode">Post Code: </label>
+                    <input type="text" name="postCode" id="postCode" placeholder="postal code" size="50">
+                </div>
+
+                <div class="submit">
+                <button type="submit" id="getID">Get Child ID</button>
+                <button type="reset" id="reset">Reset</button>
+                </div>
+
+                <!--about child information-->
+                <div class="textfield">
+                    <label for="childID">Child ID <small>(only use in this website)</small></label>
+                    <input type="text" name="childID" id="childID" size="50" required>
+                </div>
+                <div class="textfield">
+                    <label for="dob">Date of Birth: </label>
+                    <input type="text" name="dob" id="dob" size="50" required>
+                </div>
+                <div class="textfield">
+                    <label for="childFirstN">Child First Name: </label>
+                    <input type="text" name="childFirstN" id="childFirstN" size="50">
+                </div>
+                <div class="textfield">
+                    <label for="childLastN">Child Last Name: </label>
+                    <input type="text" name="childLastN" id="childLastN" size="50">
+                </div>
+                <div class="textfield">
+                    <label for="sex">Sex: </label>
+                    <input type="text" name="sex" id="sex" size="50" required>
+                </div>
+                <div class="textfield">
+                    <label for="hospital">Hospital Name: </label>
+                    <input type="text" name="hospital" id="hospital" size="50">
+                </div>
+                <div class="textfield">
+                    <label for="hCity">City: </label>
+                    <input type="text" name="hCity" id="hCity" size="50">
+                </div>
+
+                <!--about immunization information-->
+                <div class="textfield">
+                    <label for="immuniDate">Immunization Date: </label>
+                    <input type="text" name="immuniDate" id="immuniDate" size="50" required>
+                </div>
+                <div class="textfield">
+                    <label for="immuniName">Immunization Name <small>(Please select)</small>: </label>
+                    <input list="immuniName" name="immuniName"> 
+                    <datalist id="immuniName">
+                        <option value="Diphtheria"></option>
+                        <option value="Tetanus"></option>
+                        <option value="Pertussis"></option>
+                        <option value="Polio (IPV)"></option>
+                        <option value="Polio (OPV)"></option>
+                        <option value="Hib"></option>
+                        <option value="Pneumo-conjugate-13"></option>
+                        <option value="Rotavirus"></option>
+                        <option value="Measles"></option>
+                        <option value="Mumps"></option>
+                        <option value="Rubella"></option>
+                        <option value="Men-conjugate-C"></option>
+                        <option value="Men-conjugate-ACYW"></option>
+                        <option value="Varicella"></option>
+                        <option value="Hepatitis B"></option>
+                        <option value="Human Papillomavirus"></option>
+                        <option value="Seasonal Influenza"></option>
+                        <option value="Pneumo-poly"></option>
+                        <option value="Other (please specify here)"></option>
+                    </datalist>
+                </div>
+                <div class="textfield">
+                    <label for="administered">Immunization Administered: </label>
+                    <input type="text" name="administered" id="administered" size="50" required>
+                </div>
+
+                <div class="submit">
+                    <button type="submit" id="register">Register</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+
+            </form>
+        </div>
+        
+        
+
+    </main>
+
+    <footer>
+        <div class="foot_nav">
+            <a href="index.html">HOME &nbsp;</a>
+            <a href="routinevaccine.html">&nbsp; Routin Vaccinations &nbsp;</a>
+            <a href="immuninization.html">&nbsp; Immunization Schedule &nbsp;</a>
+            <a href="firstImmu.html">&nbsp; First Immunization<br>Record &nbsp;</a>
+            <a href="login.html">&nbsp; Rigister / LogIn &nbsp;</a>
+            <a href="contactus.html">&nbsp; About Us</a>
+        </div>  
+        
+        <address>@2022 Web Programming Assignment2 Group4, All right reserved,  Mao Ye; Qingfang Tan; Tanzim Ahmed Sagar; Xiaopeng Li</address>
+    </footer>
+
+</body>
+</html>

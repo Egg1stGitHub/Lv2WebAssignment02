@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Children Immunization Record Webpage</title>
+        <meta name="author" content="Mao Ye; QingfangTan; Tanzim Ahmed Sagar; Xiaopeng Li"/>
+        <meta name="pagename" content="index.html"/>
+        <link rel="stylesheet" href="assign2.css"/> 
+    </head>
+
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <img src="/Assignment2/Image/logo.png" class="logo">
+                <div class="flex-container">
+                <div class="nav_top1">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="nav_top">
+                    <a href="routinevaccine.html">Routin<br>Vaccinations</a>
+                </div>
+                <div class="nav_top">
+                    <a href="immuninization.html">Immunization<br>Schedule</a>
+                </div>
+                <div class="nav_top">
+                    <a href="firstImmu.html">First Immunization<br>Record</a>
+                </div>
+                <div class="nav_top">
+                    <a href="login.html">Rigister/<br>LogIn</a>
+                </div>
+                <!--search function-->
+                <div class="nav_top">
+                    <input type="search">
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Selection Parts-->
+        <form class="routineform" action="/action_page.php">
+            <label for ="vaccinename">Vaccine / Immunization Name &nbsp;</label>
+            <input list ="vaccinename" name ="vacinename">
+            <datalist id ="vaccinename">
+                <option value = "Diphtheria"></option>
+                <option value = "Tetanus"></option>
+                <option value = "Pertussis"></option>
+                <option value = "Polio(IPV)"></option>
+                <option value = "Polio(OPV)"></option>
+                <option value = "Hib"></option>
+                <option value = "Pneumo-conjugate-13"></option>
+                <option value = "Rotavirus"></option>
+                <option value = "Measles"></option>
+                <option value = "Mumps"></option>
+                <option value = "Rubella"></option>
+                <option value = "Men-conjugate-C"></option>
+                <option value = "Men-conjugate-ACYW"></option>
+                <option value = "Varicella"></option>
+                <option value = "Hepatitis B"></option>
+                <option value = "Human Papillomavirus"></option>
+                <option value = "Seasonal Influenza"></option>
+            </datalist> 
+            <label for ="vaccinescheduel">&nbsp; Vaccine / Immunization Schedule &nbsp;</label>
+            <input list ="vaccineschedule" name ="vaccineschedule">
+            <datalist id ="vaccineschedule">
+                <option value = "2 months"></option>
+                <option value = "4 months"></option>
+                <option value = "6 months"></option>
+                <option value = "12 months"></option>
+                <option value = "15 months"></option>
+                <option value = "18 months"></option>
+                <option value = "4-6 years"></option>
+                <option value = "12 years(Grade 7)"></option>
+                <option value = "13 years(Grade 8)"></option>
+                <option value = "14-16 years"></option>
+            </datalist>
+            <label for = "searchfor">&nbsp; Search &nbsp;</label>
+            <input type="search" id="searchfor" name="searchfor">
+
+            <table style="width: 100%">
+              <th>Immunization schedule.<br>Shall I use the picture here? But there is no seletion button.</th>
+            </table>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="foot_nav">
+            <a href="index.html">HOME &nbsp;</a>
+            <a href="routinevaccine.html">&nbsp; Routin Vaccinations &nbsp;</a>
+            <a href="immuninization.html">&nbsp; Immunization Schedule &nbsp;</a>
+            <a href="login.html">&nbsp; Rigister / LogIn &nbsp;</a>
+            <a href="contactus.html">&nbsp; About Us</a>
+        </div>  
+        
+        <address>@2022 Web Programming Assignment2 Group4, All right reserved,  Mao Ye; Qingfang Tan; Tanzim Ahmed Sagar; Xiaopeng Li</address>
+    </footer>
+
+</body>
+</html>
