@@ -52,9 +52,9 @@ $db = db_connect();
           <td><?php echo $results['momfullname']; ?></td>
           <td><?php echo $results['email'] ; ?></td>
     	    <td><?php echo $results['password']; ?></td>
-          <td><a class="action" href="<?php echo"show.php?id=" . $results['momhealthcard']; ?>">View</a></td>
-          <td><a class="action" href="<?php echo "edit.php?id=" . $results['momhealthcard']; ?>">Edit</a></td>
-          <td><a class="action" href="<?php echo "delete.php?id=" . $results['momhealthcard']; ?>">delete</a></td>
+          <td><a class="action" href="<?php echo"show_mother.php?id=" . $results['momhealthcard']; ?>">View</a></td>
+          <td><a class="action" href="<?php echo "edit_mother.php?id=" . $results['momhealthcard']; ?>">Edit</a></td>
+          <td><a class="action" href="<?php echo "delete_mother.php?id=" . $results['momhealthcard']; ?>">delete</a></td>
           
     	  </tr>
       <?php } ?>
@@ -99,9 +99,9 @@ $db = db_connect();
     	    <td><?php echo $results['c_lastname']; ?></td>
           <td><?php echo $results['DOB']; ?></td>
           <td><?php echo $results['SEX']; ?></td>
-          <td><a class="action" href="<?php echo"show.php?id=" . $results['child_id']; ?>">View</a></td>
-          <td><a class="action" href="<?php echo "edit.php?id=" . $results['child_id']; ?>">Edit</a></td>
-          <td><a class="action" href="<?php echo "delete.php?id=" . $results['child_id']; ?>">delete</a></td>
+          <td><a class="action" href="<?php echo"show_child.php?id=" . $results['child_id']; ?>">View</a></td>
+          <td><a class="action" href="<?php echo "edit_child.php?id=" . $results['child_id']; ?>">Edit</a></td>
+          <td><a class="action" href="<?php echo "delete_child.php?id=" . $results['child_id']; ?>">delete</a></td>
     	  </tr>
       <?php } ?>
   	</table>
@@ -122,7 +122,7 @@ $result_set = mysqli_query($db,$sql);
   <h1>Vaccine Manufactory Information</h1>
 
   <div class="actions">
-    <a class="action" href="new_manufactory.php">Create New Vaccine Manufactory Data</a>
+    <a class="action" href="new_man.php">Create New Vaccine Manufactory Data</a>
   </div>
 
   <table class="list">
@@ -138,9 +138,9 @@ $result_set = mysqli_query($db,$sql);
       <tr>
         <td><?php echo $results['SKU']; ?></td>
         <td><?php echo $results['vaccine_name']; ?></td>
-        <td><a class="action" href="<?php echo"show.php?id=" . $results['SKU']; ?>">View</a></td>
-        <td><a class="action" href="<?php echo "edit.php?id=" . $results['SKU']; ?>">Edit</a></td>
-        <td><a class="action" href="<?php echo "delete.php?id=" . $results['SKU']; ?>">delete</a></td>
+        <td><a class="action" href="<?php echo"show_man.php?id=" . $results['SKU']; ?>">View</a></td>
+        <td><a class="action" href="<?php echo "edit_man.php?id=" . $results['SKU']; ?>">Edit</a></td>
+        <td><a class="action" href="<?php echo "delete_man.php?id=" . $results['SKU']; ?>">delete</a></td>
       </tr>
     <?php } ?>
   </table>
@@ -160,7 +160,7 @@ $result_set = mysqli_query($db,$sql);
   <h1>Child's Vaccine Record Information</h1>
 
   <div class="actions">
-    <a class="action" href="new_reord.php">Create New Child's Vaccine Record Data</a>
+    <a class="action" href="new_c_v_record.php">Create New Child's Vaccine Record Data</a>
   </div>
 
   <table class="list">
@@ -178,9 +178,9 @@ $result_set = mysqli_query($db,$sql);
         <td><?php echo $results['childid']; ?></td>
         <td><?php echo $results['SKU']; ?></td>
         <td><?php echo $results['vaccine_date']; ?></td>
-        <td><a class="action" href="<?php echo"show.php?id=" . $results['childid']; ?>">View</a></td>
-        <td><a class="action" href="<?php echo "edit.php?id=" . $results['childid']; ?>">Edit</a></td>
-        <td><a class="action" href="<?php echo "delete.php?id=" . $results['childid']; ?>">delete</a></td>
+        <td><a class="action" href="<?php echo"show_c_v_record.php?id=" . $results['childid']; ?>">View</a></td>
+        <td><a class="action" href="<?php echo "edit_c_v_record.php?id=" . $results['childid']; ?>">Edit</a></td>
+        <td><a class="action" href="<?php echo "delete_c_v_record.php?id=" . $results['childid']; ?>">delete</a></td>
       </tr>
     <?php } ?>
   </table>
