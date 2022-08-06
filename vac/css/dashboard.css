@@ -1,0 +1,15 @@
+#content {
+    background-color: var(--yellow);
+    padding: 1.5rem 0rem;
+    text-align: center;
+}
+
+nav a {
+    color: var(--zircon);
+}
+
+
+table {
+    border: 1px solid #000;
+    align-self: center;
+}

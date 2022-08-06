@@ -1,0 +1,36 @@
+body {
+    overflow: auto;
+}
+
+table.personalInfo {
+    width:45%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #9b7e08;
+  border-style: solid;
+  color: #000000;
+}
+
+table.personalInfo td{
+  border-width: 2px;
+  border-color: #9b7e08;
+  border-style: solid;
+  padding: 3px;
+
+}
+
+
+
+form.chanPass {
+    width: 45%;
+}
+
+.container {
+    float:left;
+    width: 45%;
+}
+div.rcontainer {
+padding-left: 50%;
+}
+ 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="Author" content="Mao Ye">
+            <meta name="Group" content="04">
+            <meta name="Description" content="Assignment 02">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link href="https://fonts.googleapis.com/css2?family=Saira:wght@800&family=Great+Vibes&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/uniform.css">
+            <link rel="stylesheet" href="css/login.css">
+            <title>Children Immunization Record System (CIRS)</title>
+        </head>
+        <body>
+            <!-- ============= Sticky NavBar ============= -->
+            <nav class="header navbar">
+                <a href="index.html" id="logo"><h3>C I R S</h3></a>
+                <ul>
+                    <li><a class="navanchor" href="">Vaccines</a></li>
+                    <li><a class="navanchor" href="">Register/Login</a></li>
+                    <li><a class="navanchor" href="">About Us</a></li>
+                </ul>
+            </nav>
+            <main class="hero">
+                <div class="formcontainer">
+                    <h1>Admin Sign In</h1>
+                    <form id="form" action="adminlogin.php" method="post">
+                        
+                        <div class="textfield">
+                            <label for="account">Admin Account</label>
+                            <input type="text" name="account" id="account" placeholder="Admin Account" required>
+                            <br><small></small>
+                        </div>
+
+                        <div class="textfield">
+                            <label for="Apass">Password</label>
+                            <input type="password" name="Apass" id="Apass" placeholder="Password" required>
+                            <br><small></small>
+                        </div>
+
+                        <button type="submit">Go!</button>
+                    </form>
+                </div>
+                
+            </main>
+            <footer>
+                <address>@2022 Web Programming Assignment02 Group[4], All right reserved,  Mao Ye; Qingfang Tan; Tanzim Ahmed Sagar; Xiaopeng Li</address>
+            </footer>
+        </body>
+    </html>

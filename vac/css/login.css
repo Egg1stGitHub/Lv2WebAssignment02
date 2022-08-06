@@ -1,0 +1,126 @@
+/*
+    CSS stylesheet by Mao Ye
+ */
+
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 34pt;
+	color: black;
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+.formcontainer {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 0 auto;
+}
+
+label {
+    font-size: 16pt;
+	color: rgb(0, 0, 0);
+	padding-right: 50%;
+}
+
+.textfield input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 14pt;
+	color: black;
+}
+
+
+button[type="submit"] {
+	min-width: 130px;
+	color: #fff;
+	padding:15px;
+	font-weight: bold;
+	font-size: 24pt;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border-radius: 5px;
+	background: #2c0b8e;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+button[type="submit"]:hover {
+	background: #fff;
+	color: #2c0b8e
+}
+
+
+
+
+button[type="button"] {
+	min-width: 130px;
+	color: #fff;
+	padding: 15px 40px;
+	font-weight: bold;
+	font-size: 24pt;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	overflow: hidden;
+	border-radius: 5px;
+	border: none;
+	background-color: #25a743;
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+button[type="button"]:hover {
+	border-radius: 5px;
+	padding-right: 24px;
+	padding-left:8px;
+}
+button[type="button"]:hover:after {
+	opacity: 1;
+	right: 10px;
+}
+button[type="button"]:after {
+	content: "\00BB";
+	position: absolute;
+	opacity: 0;
+	font-size: 20px;
+	line-height: 40px;
+	top: 0;
+	right: -20px;
+	transition: 0.4s;
+}
+
+.textfield {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.textfield.success input {
+	border-color: green;
+	border-width: 5px;
+}
+.textfield.error input {
+	border-color: red;
+	border-width: 5px;
+}
+.textfield.error small {
+	color: #cf2727;
+	font-size: 14pt;
+}
+
+.toRegister {
+	text-align: center;
+}
+.toRegister h2 {
+	font-size: 24pt;
+	color: black;
+}
